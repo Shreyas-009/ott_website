@@ -1,11 +1,11 @@
 import React from "react";
 import Routers from "./routes/Routers";
-import NavBar from "./components/Navbar";
+import NaveBar from "./components/Navebar";
 
 const App = () => {
   return (
     <div className="w-full bg-black text-white">
-      <NavBar />
+      <NaveBar />
       <Routers />
     </div>
   );
