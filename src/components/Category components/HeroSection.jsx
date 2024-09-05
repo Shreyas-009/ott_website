@@ -1,12 +1,11 @@
 import React from "react";
-import Navbar from "../Navbar";
 import { IoSearch } from "react-icons/io5";
 import { TiArrowSortedDown } from "react-icons/ti";
 
 const HeroSection = () => {
   return (
     <div className='w-[100%] h-[122vh] relative bg-[url("/images/hero-bg.jpeg")] bg-top bg-contain bg-no-repeat font-monteserrat'>
-      <Navbar />
+ 
 
       <main className="pt-[15vh] w-full h-full absolute top-0 left-0 bg-gradient-to-t to-transparent from-webBlue text-white flex flex-col justify-evenly items-center">
         <div className="w-full flex justify-center gap-10 ">
