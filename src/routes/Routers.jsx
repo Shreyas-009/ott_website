@@ -1,15 +1,17 @@
-import React from 'react'
-import {Route , Router} from "react-router-dom"
-import Home from '../pages/Home'
-import Category from '../pages/Category'
+import React from "react";
+import Home from "../pages/Home";
+import Category from "../pages/Category";
+import AnimePage from "../pages/AnimePage"; 
+import { Route, Routes } from "react-router-dom";
 
 const Routers = () => {
   return (
-    <Router>
-        <Route to={"/"} element={<Home/>}/>
-        <Route to={"/category"} element={<Category/>}/>
-    </Router>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/category" element={<Category />} />
+      <Route path="/anime/:animeId" element={<AnimePage />} />{" "}
+    </Routes>
+  );
+};
 
-export default Routers
+export default Routers;

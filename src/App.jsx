@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Routers from "./routes/Routers";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
-    <div className='w-full h-screen bg-zinc-900 text-white'>App</div>
-  )
-}
+    <div className="w-full bg-black text-white">
+      <NavBar />
+      <Routers />
+    </div>
+  );
+};
 
-export default App
+export default App;
